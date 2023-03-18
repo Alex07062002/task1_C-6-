@@ -10,6 +10,8 @@ int main()
     int** matrix = reverse_matrix.inputFromUser(*rows,*columns);
     reverse_matrix.reverseMatrix(matrix,*rows,*columns);
     reverse_matrix.output(matrix,*rows,*columns);
+    delete rows;
+    delete columns;
     return 0;
 }
 
